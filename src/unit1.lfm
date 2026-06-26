@@ -1,0 +1,103 @@
+object Form1: TForm1
+  Left = 194
+  Height = 337
+  Top = 263
+  Width = 640
+  Caption = 'Form1'
+  ClientHeight = 337
+  ClientWidth = 640
+  DesignTimePPI = 120
+  LCLVersion = '4.6.0.0'
+  object lbl_name: TLabel
+    Left = 32
+    Height = 20
+    Top = 24
+    Width = 127
+    Caption = 'Nombre y Apellido'
+  end
+  object lbl_nota: TLabel
+    Left = 208
+    Height = 20
+    Top = 24
+    Width = 161
+    Caption = 'Nota de estudiante 1-10'
+  end
+  object edt_name: TEdit
+    Left = 32
+    Height = 28
+    Top = 48
+    Width = 127
+    TabOrder = 0
+  end
+  object edt_nota: TEdit
+    Left = 208
+    Height = 28
+    Top = 48
+    Width = 164
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object btn_cargar: TButton
+    Left = 416
+    Height = 71
+    Top = 24
+    Width = 192
+    Caption = 'Cargar Nota'
+    TabOrder = 2
+    OnClick = btn_cargarClick
+  end
+  object lbl_datos: TLabel
+    Left = 40
+    Height = 1
+    Top = 112
+    Width = 1
+  end
+  object btn_aprobados: TButton
+    Left = 416
+    Height = 31
+    Top = 120
+    Width = 193
+    Caption = 'Cantidad de Aprobados'
+    TabOrder = 3
+    OnClick = btn_aprobadosClick
+  end
+  object combox_estu: TComboBox
+    Left = 415
+    Height = 28
+    Top = 168
+    Width = 193
+    ItemHeight = 20
+    TabOrder = 4
+    Text = 'Elige al estudiante'
+    OnSelect = combox_estuSelect
+  end
+  object lbl_aprobado: TLabel
+    Left = 216
+    Height = 25
+    Top = 128
+    Width = 98
+    Caption = 'Aprobados:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -18
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object btn_promedio: TButton
+    Left = 416
+    Height = 31
+    Top = 208
+    Width = 197
+    Caption = 'Calcular promedio de notas'
+    TabOrder = 5
+    OnClick = btn_promedioClick
+  end
+  object lbl_promedio: TLabel
+    Left = 216
+    Height = 20
+    Top = 219
+    Width = 129
+    Caption = 'Promedio de notas:'
+  end
+end
